@@ -1,0 +1,350 @@
+html {
+    font-size: 18px;
+}
+
+html,body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    position: relative;
+    /* height: 100vh; */
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Oxygen', sans-serif;
+    /* background-color:#ddedf8; */
+    background: url('../images/background/img-back.jpg') no-repeat 0, 0;
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav {
+    height: 8.5em;
+    background-color:rgba(17, 27, 47, 0.930);
+    display: flex;
+    transition: 0.5s;
+}
+
+nav:hover {
+    background-color:rgba(17, 27, 47, 0.985);
+}
+
+a {
+    list-style: none;
+    list-style-type: none;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.logoContainer {
+    display: none;
+    margin: auto 0 auto 2.5em;
+}
+
+.logo {
+    height: 100%;
+    width: 120px;
+    border-radius: 25%;
+    opacity: 0.75;
+}
+
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar ul {
+    margin: 0 auto;
+    width: 70%;
+    vertical-align: middle;
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-evenly;
+}
+
+.navbar li {
+    list-style: none;
+    
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 100%;
+    
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25em;
+    color:  #e2f4ff;
+}
+
+.navbar a::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 1px;
+    position: relative;
+    top: 8px;
+    background: #e2f4ff;
+    transition: width 0.3s;
+}
+
+/* .navbar a:hover::after, .navbar a:focus::after { */
+.navbar a:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}
+
+/* .navbar a:hover, .navbar a:focus { */
+.navbar a:hover {
+    color: rgb(187, 31, 31);
+    transition: 0.3s;
+}
+
+/* a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.28em;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    list-style: none;
+    color: #e4f4fd;
+    line-height: 100%;
+} */
+
+/* .navbar li:hover, .navbar li:focus {
+    color: rgb(187, 31, 31);
+    border-bottom: 1px solid #e4f4fd;
+} */
+
+.bg-overlay {
+    position: absolute;
+    top: 144;
+    left: 0;
+    width: 100%;
+    height: 602px;
+    z-index: 0;
+    background-color: rgba(17, 27, 47, 0.925);
+}
+
+h1 {
+    text-align: center;
+    margin: 50px auto;
+    /* color: rgb(204, 20, 20); */
+    color: rgb(187, 31, 31);
+    font-family: 'Oxygen', sans-serif;
+    /* font-size: 2.3rem; */
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 5;
+    
+}
+
+.main-heading {
+    position: relative;
+    margin-top: 100px;
+    /* transition: margin 3s; */
+    /* overflow-y: hidden; */
+}
+
+.heading-text {
+    display: inline-block;
+    position: relative;
+    width: 816.2px;
+    margin: 10px 0 10px 300px;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Oxygen', sans-serif;
+    /* font-size: 1.5rem; */
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    color: #e2f4ff;
+    overflow-y: hidden;
+    /* transition: margin-left 2s; */
+    /* line-height: 35px; */
+}
+
+
+
+.text {
+    /* margin: 0 0 0 95px; */
+    margin: 0;
+    /* margin-left: 95px; */
+    /* position: relative; */
+    /* left: 0px; */
+}
+
+.heading-text:nth-of-type(1) {
+    /* margin-left: 300px; */
+    transition-timing-function: ease-in;
+}
+
+.heading-text:nth-of-type(1) .text {
+    margin-left: 220px;
+    /* position: relative; */
+
+}
+
+.heading-text:nth-of-type(2) {
+    /* margin-left: 300px; */
+    transition-timing-function: ease-out;
+    }
+
+.heading-text:nth-of-type(3) {
+    /* margin-left: 300px; */
+    transition-timing-function: linear;
+    }
+
+.heading-text:nth-of-type(2) .text {
+    margin-left: 138px;
+    /* position: relative; */
+}
+
+.heading-text:nth-of-type(3) .text {
+    /* width: fit-content; */
+    margin-left: 190px;
+    /* position: relative; */
+}
+
+.heading-text:nth-of-type(3) span:nth-of-type(3) {
+    margin-left: 10px;
+}
+
+.heading-text:nth-of-type(1) .adj {
+    position: relative;
+    left: -60px;
+}
+
+.heading-text:nth-of-type(2) .adj {
+    position: relative;
+    left: -60px;
+}
+
+.heading-text:nth-of-type(3) .adj {
+    position: relative;
+    left: -60px;
+}
+
+.adj:nth-of-type(1) {
+    left: -20px;
+}
+
+.heading-text span {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.heading-text .highlight {
+    /* color: rgb(189, 20, 20); */
+    color:  rgb(187, 31, 31);
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0px;
+    position: absolute;
+    /* left: 560px; */
+    left: 292px;
+}
+
+.sol {
+    position: relative;
+    height: 30px;
+    margin-top: 400px;
+    /* margin-top: 20px; */
+}
+
+.sol p {
+    color: rgb(187, 31, 31);
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+    position: absolute;
+    /* left: 560px; */
+    left: 592px;
+}
+
+footer {
+    position: relative;
+    margin-top: 250px;
+    color: #e4f4fd90;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    height: 40px;
+}
+
+.developer {
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid  rgba(187, 31, 31, 0.140);
+    box-shadow: 0px 0px 2px 1px rgba(187, 31, 31, 0.140);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.developer:hover {
+    border: 3px solid  rgba(17, 27, 47, 0.920);
+    box-shadow: 0px 0px 3px 1px #e4f4fd22;
+    /* transition: all 3s; */
+}
+
+/* footer strong {
+    color: rgba(187, 31, 31, 0.836);
+    font-size: 1.1rem;
+    letter-spacing: 0.75px;
+
+} */
+
+.brand-name {
+    color: rgba(187, 31, 31, 0.800);
+    /* font-size: 0.95rem; */
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin-left: 5px;
+    padding: 0px 0;
+}
+
+/* .contact {
+    margin-left: 100px;
+} */
+
+.contact a {
+    margin-left: 25px;
+    color:   #e4f4fd90;
+    transition: all 0.2s;
+}
+
+.contact a:first-child {
+    margin-left: 0;
+}
+
+.contact a:last-of-type {
+    margin-right: 25px;
+}
+
+.phone {
+    /* font-size: 0.95em; */
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    transition: all 0.2s;
+}
+
+.phone i {
+    margin-right: 5px;
+}
+
+.contact a:hover, .phone:hover {
+    color: rgba(187, 31, 31, 0.790);
+}

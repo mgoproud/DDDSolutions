@@ -1,0 +1,181 @@
+/* body {
+    animation: transBody 1s linear;
+} */
+
+.heading-text:nth-of-type(1) {
+    animation: transitionIn 2s ease-in;
+} 
+
+.heading-text:nth-of-type(2) {
+    animation: transitionIn2 2s ease;
+} 
+
+.heading-text:nth-of-type(3) {
+    animation: transitionIn3 2s cubic-bezier(0.6, 0.4, 0.7, 0.3);
+} 
+
+.sol {
+    animation: transitionIn4 2s linear;
+}
+
+nav {
+    animation: transNav 1s ease;
+}
+
+.navbar ul  {
+    animation: navLinks 1s ease;
+}
+
+.logo-title, .logo-desc {
+    animation: logo 1s ease;
+}
+
+footer {
+    animation: transFoot 1s ease-in;
+}
+
+.servicesH1, .services-text {
+    animation: services-heading 1s ease-in;
+}
+
+.bg-overlay {
+    animation: overlay 2s ease-in-out;
+}
+
+@keyframes transBody {
+    from {
+        background-color: black;
+        /* opacity: 0; */
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 0);
+        /* opacity: 1; */
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        margin-left: -350px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 300px;
+    }
+}
+
+@keyframes transitionIn2 {
+    from {
+        opacity: 0;
+        margin-left: 1000px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 300px;
+    }
+}
+
+@keyframes transitionIn3 {
+    from {
+        opacity: 0;
+        margin-left: -350px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 300px;
+    }
+}
+
+@keyframes transitionIn4 {
+    from {
+        opacity: 0;
+        margin-top: 250px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 20px;
+    }
+}
+
+@keyframes transNav {
+    from {
+        /* opacity: 0; */
+        /* background-color:rgb(17, 27, 47); */
+        background-color:rgb(17, 27, 47);
+        /* margin-top: 250px; */
+    }
+
+    to {
+        /* opacity: 1; */
+        /* background-color:rgba(17, 27, 47, 0.96); */
+        background-color:rgba(17, 27, 47, 0.988)
+        /* margin-top: 20px; */
+    }
+}
+
+@keyframes logo {
+    from {
+        opacity: 0;
+        /* background-color:rgb(17, 27, 47); */
+        /* margin-top: 250px; */
+    }
+
+    to {
+        opacity: 1;
+        /* background-color:rgba(17, 27, 47, 0.948); */
+        /* margin-top: 20px; */
+    }
+}
+
+@keyframes navLinks {
+    from {
+        opacity: 0;
+        /* background-color:rgb(17, 27, 47); */
+        /* margin-top: 250px; */
+    }
+
+    to {
+        opacity: 1;
+        /* background-color:rgba(17, 27, 47, 0.948); */
+        /* margin-top: 20px; */
+    }
+}
+
+@keyframes transFoot {
+    from {
+        opacity: 0;
+        /* margin-top: 250px; */
+    }
+
+    to {
+        opacity: 1;
+        /* margin-top: 20px; */
+    }
+}
+
+@keyframes overlay {
+    from {
+        background-color: rgb(17, 27, 47);
+        /* opacity: 0; */
+    }
+
+    to {
+        background-color: rgba(17, 27, 47, 0.94);
+        /* margin-top: 20px; */
+    }
+}
+
+@keyframes services-heading {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
